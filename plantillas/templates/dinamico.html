@@ -9,6 +9,11 @@
     <h1>Hola {{name}}</h1>
     <h3>Categorías</h3>
     <ul>
+        {% comment %}
+        bucles y condicionales
+        En la parte inferior recorremos las categorias y las pintamos
+        En caso de ser code, la categoria se muestra en negrita
+        {% endcomment %}
     {% for category in categories %}
     {% if category == 'code' %}
     <li><b>{{ category }}</b></li>
