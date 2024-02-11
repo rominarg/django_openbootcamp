@@ -6,7 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{name}}</h1>
+    <h1>Hola {{name}}</h1>
+    <h3>Categorías</h3>
+    <ul>
+    {% for category in categories %}
+    {% if category == 'code' %}
+    <li><b>{{ category }}</b></li>
+    {% else %}
+    <li>{{ category }}</li>
+     {% endif %}
+    {% endfor %}
+    </ul>
+    <b></b>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque, iure nesciunt repellat consectetur, placeat eum tempore optio blanditiis, voluptatum ducimus quo quis quibusdam facilis sunt rerum ipsam alias inventore?</p>
 </body>
 </html>
+
