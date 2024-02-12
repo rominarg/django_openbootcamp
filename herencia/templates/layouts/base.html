@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block styles %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}"><h3 id="logo">Django</h3></a></li>
+            <li><a href="{% url 'herencia' %}">Herencia</a></li>
+            <li><a href="{% url 'otra' %}">Otra</a></li>
+            <li><a href="{% url 'ejemplo' %}">Ejemplo</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        Todos los derechos reservados
+    </footer>
+    <script src="{% block scripts %}{% endblock %}"></script>
+</body>
+</html>
