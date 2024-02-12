@@ -13,9 +13,7 @@
     <main>
         {% block content %}{% endblock %}
     </main>
-    <footer>
-        Todos los derechos reservados
-    </footer>
+    {% include 'layouts/partials/footer.html' %}
     <script src="{% block scripts %}{% endblock %}"></script>
 </body>
 </html>
