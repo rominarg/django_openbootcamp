@@ -1,20 +1,22 @@
 {% load static %}
 <footer>
     <img src="{% static 'img/logo.png' %}" alt="Logo" width="294" height="82">
+    <div class="footer-columns">
     <ul>
-        <li><a href="{% url 'index' %}">Inicio</a></li>
-        <li><a href="{% url 'porfolio' %}">Porfolio</a></li>
-        <li><a href="{% url 'porfolio' %}">Porfolio</a></li>
+        <li><a href="{% url 'index' %}">Sobre mí</a></li>
+        <li><a href="{% url 'porfolio' %}">Servicios</a></li>
+        <li><a href="{% url 'porfolio' %}">Politicas de privacidad</a></li>
     </ul>
     <ul>
-        <li><a href="{% url 'index' %}">Inicio</a></li>
-        <li><a href="{% url 'porfolio' %}">Porfolio</a></li>
-        <li><a href="{% url 'porfolio' %}">Porfolio</a></li>
+        <li><a href="{% url 'index' %}">Preguntas</a></li>
+        <li><a href="{% url 'porfolio' %}">Compras</a></li>
+        <li><a href="{% url 'porfolio' %}">Envíos</a></li>
     </ul>
     <ul>
-        <li><a href="{% url 'index' %}">Inicio</a></li>
-        <li><a href="{% url 'porfolio' %}">Porfolio</a></li>
-        <li><a href="{% url 'porfolio' %}">Porfolio</a></li>
+        <li><a href="{% url 'index' %}">Diseño Web</a></li>
+        <li><a href="{% url 'porfolio' %}">Manual de marca</a></li>
+        <li><a href="{% url 'porfolio' %}">Social Media</a></li>
     </ul>
+</div>
     Todos los derechos reservados
 </footer>

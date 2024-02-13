@@ -22,8 +22,6 @@ nav {
 }
 
 nav img {
-    width: 100px;
-    height: 82px;
     margin: 25px;
 }
 
@@ -61,8 +59,31 @@ footer {
     background-color: var(--background-color);
     color: aliceblue;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     padding: 50px;
 }
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.footer-columns ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-columns ul li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+footer ul{
+    list-style: none;
+}
+footer img{
+    margin: 25px;
+}
+
