@@ -18,7 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    background-color: gold;
+    background-color: var(--background-color);
 }
 
 nav img {
@@ -45,6 +45,10 @@ font-weight: 400;
 color: aliceblue;
 }
 
+@font-face {
+    font-family:'ProtestStrike', sans-serif;
+    src: url(../font/ProtestStrike-Regular.ttf);
+}
 main {
     display: flex;
     justify-content: center;
@@ -54,7 +58,7 @@ main {
 }
 
 footer {
-    background-color: #5e4a11;
+    background-color: var(--background-color);
     color: aliceblue;
     display: flex;
     justify-content: center;
